@@ -14,7 +14,6 @@ function save() {
     var url_list_node = document.getElementById("url_list");
     var urls = url_list_node.value.split("\n");
 
-    console.log("saving", urls);
     localStorage.urls = JSON.stringify(urls);
 }
 
