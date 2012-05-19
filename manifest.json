@@ -1,13 +1,13 @@
 {
   "name": "Tail Page",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
   "description": "Stay scrolled to the bottom of a page. Handy for buildbot output.",
   "icons": {
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "browser_action": {
+  "page_action": {
     "default_icon": "icons/icon.png"
   },
   "background": {"scripts": ["background.js"]},
