@@ -1,10 +1,19 @@
 <html>
 <head>
-    <title>Options</title>
+    <title>Tail Page Options</title>
+    <link rel="stylesheet" type="text/css" media="all" href="styles/options.css" />
 </head>
 <script type="text/javascript" src="options.js"></script>
 <body>
-    <textarea id="url_list"></textarea>
-    <button id="save">Save</button>
+    <div id="content">
+        <p id="description">
+        Tail Page will show a page action icon only for URLs that match the regular expressions below. Please separate each regex with a newline.
+        </p>
+        <div>
+            <textarea id="url_list" rows="10" cols="50"></textarea>
+            <hr />
+            <button id="save">Save</button>
+        </div>
+    </div>
 </body>
 </html>
