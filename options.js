@@ -1,36 +1,20 @@
 function restore() {
     var i;
-    var url_input;
-    var url_list_node;
-    var urls = [];
+    var url_list_node = document.getElementById("url_list");
+    var urls;
 
     if (localStorage.urls) {
         urls = JSON.parse(localStorage.urls);
     }
 
-    url_list_node = document.getElementById("url_list");
-
-    for (i=0; i<urls.length; i++) {
-        url_input = document.createElement("input");
-        url_input.value = urls[i];
-        url_input.setAttribute("class", "url");
-        url_input.setAttribute("type", "text");
-        url_list_node.insertBefore(url_input);
-        console.log("loaded", urls[i]);
-    }
+    url_list_node.value = urls.join("\n");
 }
 
 function save() {
-    var i;
-    var url;
-    var url_elements = document.getElementsByClassName("url");
-    var urls = [];
+    var url_list_node = document.getElementById("url_list");
+    var urls = url_list_node.value.split("\n");
 
-    for (i=0; i<url_elements.length; i++) {
-        urls.push(url_elements[i].value);
-        console.log("stored", url_elements[i].value);
-    }
-
+    console.log("saving", urls);
     localStorage.urls = JSON.stringify(urls);
 }
 
