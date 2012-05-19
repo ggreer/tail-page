@@ -5,7 +5,7 @@ function check_url(tab_id, change_info, tab) {
     chrome.pageAction.hide(tab_id);
 
     for (i = 0; i < active_urls.length; i++) {
-        if(tab.url === active_urls[i]) {
+        if(tab.url.match(active_urls[i]) !== null) {
             chrome.pageAction.show(tab_id);
             break;
         }
