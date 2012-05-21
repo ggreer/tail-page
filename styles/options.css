@@ -1,7 +1,32 @@
+body {
+    background-color: #ddd;
+}
+
 #content {
-    
+    padding: 1em 2em;
+    width: 30em;
 }
 
 #description {
-    max-width: 20em;
+    background-color: #fff;
+    padding: 1em;
+}
+
+#save {
+    height: 2em;
+    width: 10em;
+}
+
+#saved_ok {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+}
+
+#settings {
+    text-align: center;
+}
+
+#url_list {
+    width: 100%;
 }
