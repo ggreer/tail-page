@@ -3,6 +3,7 @@
   "version": "0.2",
   "manifest_version": 2,
   "description": "Stay scrolled to the bottom of a page. Handy for buildbot output.",
+  "homepage_url": "https://github.com/ggreer/tail-page",
   "icons": {
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
