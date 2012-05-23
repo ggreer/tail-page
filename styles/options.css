@@ -1,7 +1,34 @@
+body {
+    background-color: #ddd;
+}
+
 #content {
-    
+    padding: 20px 40px;
+    width: 550px;
 }
 
 #description {
-    max-width: 20em;
+    background-color: #fff;
+    padding: 1em;
+}
+
+#save {
+    height: 2em;
+    width: 10em;
+}
+
+#saved_ok {
+    position: absolute;
+    width: 550px;
+    text-align: center;
+    background-color: #ddd;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+#settings {
+    text-align: center;
+}
+
+#url_list {
+    width: 100%;
 }
