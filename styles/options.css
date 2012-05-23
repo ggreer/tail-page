@@ -3,8 +3,8 @@ body {
 }
 
 #content {
-    padding: 1em 2em;
-    width: 30em;
+    padding: 20px 40px;
+    width: 550px;
 }
 
 #description {
@@ -19,8 +19,10 @@ body {
 
 #saved_ok {
     position: absolute;
-    height: 128px;
-    width: 128px;
+    width: 550px;
+    text-align: center;
+    background-color: #ddd;
+    -webkit-transition: all 1s ease-in-out;
 }
 
 #settings {

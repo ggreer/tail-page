@@ -18,7 +18,9 @@ function save() {
     localStorage.urls = JSON.stringify(urls);
 
     saved_ok.style.display = "block";
-    window.setTimeout(function () { saved_ok.style.display = "none"; }, 1000);
+    saved_ok.style.opacity = "1.0";
+    window.setTimeout(function () { saved_ok.style.opacity = "0.0"; }, 1000);
+    window.setTimeout(function () { saved_ok.style.display = "none"; }, 2000);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
